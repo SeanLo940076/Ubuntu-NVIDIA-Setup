@@ -20,8 +20,8 @@ if your GPU are 40 series, to do A part.
 if your GPU are others, you can choose A or B part.
 Because the lowest CUDA version for 40 series is 11.8.
 
-# A part
-## NVIDIA CUDA:
+## A part
+A1. **NVIDIA CUDA:**
 
 ```bash
 sudo apt update
@@ -43,7 +43,7 @@ export LD_LIBRARY_PATH=/usr/local/cuda/lib64\${LD_LIBRARY_PATH:+:${LD_LIBRARY_PA
 
 To verify the installation, use: ```nvcc -V```
 
-## NVIDIA CUDNN:
+A2. **NVIDIA CUDNN:**
 GO to this link Download
 https://developer.nvidia.com/downloads/compute/cudnn/secure/8.8.1/local_installers/11.8/cudnn-local-repo-ubuntu2004-8.8.1.3_1.0-1_amd64.deb/
 
@@ -60,9 +60,9 @@ sudo apt-get -y install libfreeimage3 libfreeimage-dev
 reboot
 ```
 
-# B part
+## B part
 
-## NVIDIA CUDA:
+B1. **NVIDIA CUDA:**
 
 ```bash
 sudo apt update
@@ -84,8 +84,8 @@ export LD_LIBRARY_PATH=/usr/local/cuda/lib64\${LD_LIBRARY_PATH:+:${LD_LIBRARY_PA
 
 To verify the installation, use: ```nvcc -V```
 
-## NVIDIA CUDNN:
-GO to this link Download
+B2. **NVIDIA CUDNN:**
+Go to this link to Download
 https://developer.nvidia.com/compute/cudnn/secure/8.4.1/local_installers/11.6/cudnn-local-repo-ubuntu2004-8.4.1.50_1.0-1_amd64.deb
 
 ```bash
@@ -101,22 +101,22 @@ sudo apt-get -y install libfreeimage3 libfreeimage-dev
 reboot
 ```
 
-To verify the CUDNN installation, use:
+3. **To verify the CUDNN installation, use:**
 ```bash
 cp -r /usr/src/cudnn_samples_v8/ ~/Documents/
 cd Documents/cudnn_samples_v8/mnistCUDNN/
 make clean && make
 ./mnistCUDNN
-```
 
 You will see "Test Pass"
+```
 
-To verify the installation, use:
+4. **To verify the installation, use:**
 ```bash
 cat /usr/include/x86_64-linux-gnu/cudnn_v*.h | grep CUDNN_MAJOR -A 2
 ```
 
-## Other Application
+5. **Other Application**
 ```bash
 sudo apt -y install htop
 sudo apt -y install ibus-chewing
@@ -124,7 +124,7 @@ sudo apt -y install terminator
 
 ```
 
-## Two Systeam Time
+6. **Two Systeam Time**
 ```bash
 sudo timedatectl set-local-rtc 1
 sudo apt-get install ntpdate
