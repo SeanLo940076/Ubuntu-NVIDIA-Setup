@@ -17,7 +17,7 @@ reboot
 To verify the installation, use: ```nvidia-smi```
 
 if your GPU are 40 series, to do A part.
-if your GPU are 30 series or other, to do B part.
+if your GPU are others, you can choose A or B part.
 Because the lowest CUDA version for 40 series is 11.8.
 
 # A part
