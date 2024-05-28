@@ -32,7 +32,10 @@ wget https://developer.download.nvidia.com/compute/cuda/11.8.0/local_installers/
 sudo dpkg -i cuda-repo-ubuntu2004-11-8-local_11.8.0-520.61.05-1_amd64.deb
 sudo cp /var/cuda-repo-ubuntu2004-11-8-local/cuda-*-keyring.gpg /usr/share/keyrings/
 sudo apt-get update
+
 sudo apt-get -y install cuda
+or
+sudo apt-get -y install cuda-toolkit-11-8
 ```
 
 ```bash
