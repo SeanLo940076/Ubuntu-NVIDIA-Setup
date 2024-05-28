@@ -11,7 +11,7 @@ sudo add-apt-repository ppa:graphics-drivers/ppa
 sudo apt update
 sudo apt install ubuntu-drivers-common
 ubuntu-drivers devices
-sudo apt install nvidia-driver-535
+sudo apt install nvidia-driver-520
 reboot
 ```
 To verify the installation, use: ```nvidia-smi```
