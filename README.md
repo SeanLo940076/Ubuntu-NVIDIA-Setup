@@ -106,7 +106,7 @@ reboot
 
 3. **To verify the CUDNN installation, use:**
 ```bash
-cp -r /usr/src/cudnn_samples_v8/ ~/Documents/
+cp -r /usr/src/cudnn_samples_v8 ~/Documents/
 cd Documents/cudnn_samples_v8/mnistCUDNN/
 make clean && make
 ./mnistCUDNN
